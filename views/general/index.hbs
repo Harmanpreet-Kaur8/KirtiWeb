@@ -1,0 +1,71 @@
+<section id="home">
+  <h1 class="h-primary">Home Page</h1>
+  <button class="btn">View Available Packages</button>
+</section>
+
+<section id="services">
+  <section id="eat">
+    <h1 class="h-primary center">Some of Basic Facilities available to our customers for a Great experience</h1>
+  </section>
+</section>
+
+<section id="boxes">
+  <div class="container">
+    <div class="box">
+      <img src="/images/Online.jpg">
+      <h3>Order Online</h3>
+    </div>
+    <div class="box">
+      <img src="/images/takeaway.jpg">
+      <h3>Order Online and get package from store</h3>
+    </div>
+    <div class="box">
+      <img src="/images/delivery.png">
+      <h3>Get your Order Online</h3>
+    </div>
+    <div class="box">
+      <img src="/images/repeat.jpg">
+      <h3>Repeat your Latest Order</h3>
+    </div>
+  </div>
+</section>
+<hr>
+<br>
+<br>
+<center>
+  <h1 class="white">Our top meals!</h1>
+</center>
+
+<section id="Boxes">
+  <div class="row">
+    <div class="column">
+      <br>
+      <img src="/images/thali.jpg">
+      <b>
+        <center>Indian Thali</center>
+      </b>
+      <br>
+      category: Indian <br>
+      Meal Count: 5 <br>
+      Price: 30
+    </div>
+  </div>
+</section>
+
+<section id="Boxes">
+  <div class="row">
+    {{#each meals}}
+    <div class="column">
+      <br>
+      <img src="data:image/{{this.mealImage.contentType}};base64,{{this.mealImage.data}}">
+      <b>
+        <center>{{this.name}}</center>
+      </b>
+      <br>
+      category: {{this.category}} <br>
+      Meal Count: {{this.mealCount}} <br>
+      Price: {{this.price}}
+    </div>
+    {{/each}}
+  </div>
+</section>

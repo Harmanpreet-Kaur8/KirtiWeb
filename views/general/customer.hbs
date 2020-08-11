@@ -1,0 +1,48 @@
+<style>
+  .container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+</style>
+<form action="/store/user" method="POST">
+  <div class="container">
+    <h1>Create Account</h1>
+    <div class="forms">
+      <div class="rows">
+    <div class="columns" title="Sign in with Facebook">
+    <img src="/images/social/fb.png" alt="Snow" style="width:40%">
+  </div>
+  <div class="columns" title="Sign in with Google">
+    <img src="/images/social/google.jpg" alt="Snow" style="width:40%">
+  </div>
+  <div class="columns" title="Sign in with Twitter">
+    <img src="/images/social/twitter.jpg" alt="Forest" style="width:40%">
+  </div>
+  <div class="columns" title="Sign in with Linkedin">
+    <img src="/images/social/linkedin.png" alt="Mountains" style="width:40%">
+  </div>
+  </div>
+  </div>
+    <hr>
+    <label for="name1"><b> Name</b></label>
+    <input type="text" placeholder="Place your User Name here" required name="username" id="N1">
+    <br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Place your Email" required name="email" id="email">
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Place your Password" required name="password" id="psw">
+    <br>
+    <input type="text" name="role" value="customer" id="" style="display: none;">
+    <label for="psw-repeat"><b>Re-enter Password</b></label>
+    <input type="password" placeholder="Re-enter Password" required name="passwordRepeat" id="pswrepeat">
+    <hr>
+    <button type="submit" class="registerbtn">SIGN UP</button>
+  </div>
+</form>
+
+<div class="container signin">
+  <center>
+    <p>Already have an account? <a href="/login">Sign in</a>.</p>
+  </center>
+</div>
